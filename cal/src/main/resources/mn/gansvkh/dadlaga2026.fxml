@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="252.0" style="-fx-padding: 10; -fx-background-color: #faf0e6;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mn.gansvhk.Controller">
+   <children>
+      <TextField />
+      <GridPane prefHeight="293.0" prefWidth="346.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="60.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="C" GridPane.rowSpan="2147483647">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="p_m" layoutX="20.0" layoutY="18.0" mnemonicParsing="false" onAction="#onPlusMinusClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="+/-" GridPane.columnIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="huv" layoutX="126.0" layoutY="10.0" mnemonicParsing="false" onAction="#onOperatorClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="/" GridPane.columnIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="n1" layoutX="126.0" layoutY="10.0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="n2" layoutX="10.0" layoutY="62.0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="n3" layoutX="68.0" layoutY="62.0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="ur" layoutX="126.0" layoutY="62.0" mnemonicParsing="false" onAction="#onOperatorClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="n4" layoutX="184.0" layoutY="62.0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="4" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="n5" layoutX="10.0" layoutY="114.0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="n6" layoutX="68.0" layoutY="114.0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="has" layoutX="126.0" layoutY="114.0" mnemonicParsing="false" onAction="#onOperatorClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="n7" layoutX="10.0" layoutY="114.0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="7" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="n0" layoutX="10.0" layoutY="166.0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="0" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="n8" layoutX="10.0" layoutY="219.0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="184.0" layoutY="62.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="n9" layoutX="184.0" layoutY="62.0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="n_" layoutX="184.0" layoutY="62.0" mnemonicParsing="false" onAction="#onNumberClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="." GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="nem" layoutX="126.0" layoutY="166.0" mnemonicParsing="false" onAction="#onOperatorClick" prefHeight="66.0" prefWidth="68.0" style="-fx-background-radius: 50;" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ButtonBar prefHeight="52.0" prefWidth="106.0" GridPane.columnSpan="2">
+              <buttons>
+                <Button layoutX="3.0" layoutY="2.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="128.0" text="C">
+                     <padding>
+                        <Insets right="3.0" />
+                     </padding>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+              </buttons>
+            </ButtonBar>
+            <Button layoutX="126.0" layoutY="166.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="87.0" style="-fx-background-radius: 50;" text="=" textFill="#c36060" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</VBox>
